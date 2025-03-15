@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - WSuits Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dashboard {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 250px;
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+        }
+        .sidebar h2 {
+            color: #00ccff;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+        }
+        .sidebar ul li a {
+            color: #00ccff;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background: #181818;
+            text-align: center;
+        }
+        .main-content h1 {
+            color: #00ccff;
+        }
+        .courses-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+        .course-box {
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 204, 255, 0.2);
+            padding: 15px;
+            text-align: center;
+        }
+        .course-box img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .course-box h2 {
+            color: #00ccff;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <img src="wsuits-logo.webp" alt="WSuits Security Logo">
+            <h2>WSuits Security</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Our Courses</h1>
+            <div class="courses-container">
+                <div class="course-box">
+                    <img src="ethical-hacking.webp" alt="Ethical Hacking Basics">
+                    <h2>Ethical Hacking Basics</h2>
+                    <p>Learn the fundamentals of ethical hacking, penetration testing, and cybersecurity practices.</p>
+                </div>
+                <div class="course-box">
+                    <img src="web-security.jpg" alt="Web Security">
+                    <h2>Web Security</h2>
+                    <p>Understand web vulnerabilities, secure coding practices, and web application pentesting.</p>
+                </div>
+                <div class="course-box">
+                    <img src="penetration-testing.webp" alt="Advanced Penetration Testing">
+                    <h2>Advanced Penetration Testing</h2>
+                    <p>Enhance your skills with advanced penetration testing techniques and strategies.</p>
+                </div>
+                <div class="course-box">
+                    <img src="cybersecurity-analyst.webp" alt="cybersecurity-analyst">
+                    <h2>Ethical Hacking Basics</h2>
+                    <p>Learn the fundermentals of cyber security analysis and standout in the job market</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

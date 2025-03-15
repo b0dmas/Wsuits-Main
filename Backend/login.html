@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-wsuits Security</title>
+</head>
+<body>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dashboard {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0d023c;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(1, 38, 47, 0.5);
+        }
+        .sidebar h2 {
+            color: #00ccff;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+        }
+        .sidebar ul li a {
+            color: #00ccff;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background: #181818;
+            text-align: center;
+        }
+        .main-content h1 {
+            color: #00ccff;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 204, 255, 0.2);
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .contact-form button {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            background-color: #00ccff;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 50px;
+            
+        }
+        .contact-form button:hover {
+            background-color: #0088cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <img src="wsuits-logo.webp" alt="WSuits Security Logo">
+            <h2>WSuits Security</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Back</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Refresh</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Login</h1>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="Email">Email</label>
+                    <input type="Email" id="Email" name="Email" required>
+                    
+                    <label for="password">Passsword:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
